@@ -16,7 +16,7 @@ function mostrarNombre() {
 // Función: borra el nombre (y la ciudad) y vuelve a mostrar el resultado
 function borrar() {
  localStorage.removeItem("nombre");
- localStorage.removeItem("ciudad");
+ 
  mostrarNombre();
 }
 
