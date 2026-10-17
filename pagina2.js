@@ -1,28 +1,26 @@
-
 function mostrarNombre() {
- const nombre = sessionStorage.getItem("nombre");
- const ciudad = sessionStorage.getItem("ciudad");
+ const nombre = localStorage.getItem("nombre");
+ const ciudad = localStorage.getItem("ciudad");
  const saludo = document.getElementById("saludo");
- const hayCiudad = ciudad !== null && ciudad !== "";
 
  if (nombre === null) {
-  saludo.textContent = "No hay ningún nombre guardado." +
-   (hayCiudad ? " (Ciudad guardada: " + ciudad + ")" : "");
- } else if (!hayCiudad) {
+  saludo.textContent = "No hay ningún nombre guardado.";
+ } else if (ciudad === null || ciudad === "") {
   saludo.textContent = "Hola, " + nombre;
  } else {
-  saludo.textContent = "Hola, " + nombre + ", de " + ciudad;
+  saludo.textContent = "Hola, " + nombre + ", de " + ciudad; 
  }
 }
 
-
 function borrar() {
- sessionStorage.removeItem("nombre");
+ localStorage.removeItem("nombre");
+ localStorage.removeItem("ciudad");
  mostrarNombre();
 }
 
+
 function limpiarTodo() {
- sessionStorage.clear();
+ localStorage.clear();
  mostrarNombre();
 }
 
@@ -30,4 +28,3 @@ function limpiarTodo() {
 document.addEventListener("DOMContentLoaded", mostrarNombre);
 document.getElementById("btn-borrar").addEventListener("click", borrar);
 document.getElementById("btn-limpiar").addEventListener("click", limpiarTodo);
-
