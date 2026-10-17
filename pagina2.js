@@ -1,14 +1,15 @@
 function mostrarNombre() {
- const nombre = localStorage.getItem("nombre");
- const ciudad = localStorage.getItem("ciudad");
+ const nombre = sessionStorage.getItem("nombre");
+ const ciudad = sessionStorage.getItem("ciudad");
  const saludo = document.getElementById("saludo");
+ const hayCiudad = ciudad !== null && ciudad !== "";
 
  if (nombre === null) {
-  saludo.textContent = "No hay ningún nombre guardado.";
- } else if (ciudad === null || ciudad === "") {
+  saludo.textContent = "No hay ningún nombre guardado." +
+   (hayCiudad ? " (Ciudad guardada: " + ciudad + ")" : "");
+ } else if (!hayCiudad) {
   saludo.textContent = "Hola, " + nombre;
  } else {
-  saludo.textContent = "Hola, " + nombre + ", de " + ciudad; 
  }
 }
 
@@ -17,12 +18,10 @@ function borrar() {
  mostrarNombre();
 }
 
-
 function limpiarTodo() {
- localStorage.clear();
+ sessionStorage.clear();
  mostrarNombre();
 }
-
 
 document.addEventListener("DOMContentLoaded", mostrarNombre);
 document.getElementById("btn-borrar").addEventListener("click", borrar);
