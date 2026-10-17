@@ -13,8 +13,7 @@ function mostrarNombre() {
 }
 
 function borrar() {
- localStorage.removeItem("nombre");
- localStorage.removeItem("ciudad");
+ sessionStorage.removeItem("nombre");
  mostrarNombre();
 }
 
