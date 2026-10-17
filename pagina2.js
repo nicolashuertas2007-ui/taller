@@ -5,7 +5,7 @@ function mostrarNombre() {
  const saludo = document.getElementById("saludo");
 
  if (nombre === null) {
-  saludo.textContent = "No hay ningún nombre guardado.";
+  saludo.textContent = `No hay ningún nombre guardado. ciudad:${ciudad}`;
  } else if (ciudad === null || ciudad === "") {
   saludo.textContent = "Hola, " + nombre;
  } else {
