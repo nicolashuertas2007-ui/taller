@@ -7,8 +7,8 @@ function guardar() {
   return;
  }
 
- localStorage.setItem("nombre", nombre);   
- localStorage.setItem("ciudad", ciudad);  
+ sessionStorage.setItem("nombre", nombre);  
+ sessionStorage.setItem("ciudad", ciudad);   
  window.location.href = "pagina2.html";      
 }
 
