@@ -14,7 +14,6 @@ function mostrarNombre() {
 
 function borrar() {
  localStorage.removeItem("nombre");
- localStorage.removeItem("ciudad");
  mostrarNombre();
 }
 
