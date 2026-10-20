@@ -1,7 +1,7 @@
 const productos = [
   {
     nombre: "Animalitos navideños",
-    desc: "Caja de velas baby blancas con divertidos animalitos navideños.",
+    desc: ["Caja de velas baby blancas con divertidos animalitos navideños.", "Puedes escoger cualquiera de nuestros otros diseños que tenemos disponibles."],
     detalles: ["Presentación: caja x 10 velas", "Vela baby blanca", "$19.000" ],
     imgs: ["img/animalitosnavidadcaja.png",
             "img/animalitosnavidad.png"
@@ -10,7 +10,7 @@ const productos = [
   },
   {
     nombre: "Deseos blancos",
-    desc: "Caja de velas baby en colores pastel con frases de deseos en blanco.",
+    desc: ["Caja de velas baby en colores pastel con frases de deseos en blanco.", "Puedes escoger cualquiera de nuestros otros diseños que tenemos disponibles."],
     detalles: ["Presentación: caja x 10 velas", "Vela baby pastel", "19.000" ],
     imgs: ["img/deseosblancoscaja.png",
           "img/dedeosblancos.png"
@@ -18,7 +18,7 @@ const productos = [
   },
   {
     nombre: "Deseos negros",
-    desc: "Caja de velas baby blancas con frases de deseos en negro.",
+    desc: ["Caja de velas baby blancas con frases de deseos en negro.", "Puedes escoger cualquiera de nuestros otros diseños que tenemos disponibles."],
     detalles: ["Presentación: caja x 5 velas", "Vela baby blanca","$9.500" ],
     imgs: ["img/deseosnegrox5.png",
             "img/deseosnegros.png"
@@ -26,7 +26,7 @@ const productos = [
   },
   {
     nombre: "Animalitos navideños 2",
-    desc: "Caja de velas colombianas blancas con animalitos navideños.",
+    desc: ["Caja de velas colombianas blancas con animalitos navideños.", "Puedes escoger cualquiera de nuestros otros diseños que tenemos disponibles."],
     detalles: ["Presentación: caja x 10 velas", "Vela colombiana blanca","$16.000"],
     imgs: ["img/navidadcaja.png",
           "img/navidad.png",
