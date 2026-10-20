@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo velas 2026</title>
+    <link rel="stylesheet" href="velas.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Catálogo velas 2026</h1>
+    </header>
+
+    <section class="contenedor">
+        <div class="product">
+            <h2>Animalitos navideños</h2>
+            <img src="img/animalitosnavidadcaja.png" alt="caja vela baby blanca x 10" class="producto">
+            <button data-i="0">ver información</button>
+        </div>
+        <div class="product">
+            <h2>Deseos blancos</h2>
+            <img src="img/deseosblancoscaja.png" alt="caja vela baby pastel x 10" class="producto">
+            <button data-i="1">ver información</button>
+        </div>
+        <div class="product">
+            <h2>Deseos negros</h2>
+            <img src="img/deseosnegrox5.png" alt="caja vela baby blanca x 5" class="producto">
+            <button data-i="2">ver información</button>
+        </div>
+        <div class="product">
+            <h2>Animalitos navideños 2</h2>
+            <img src="img/navidadcaja.png" alt="caja vela colombiana blanca x 10" class="producto">
+            <button data-i="3">ver información</button>
+        </div>
+    </section>
+
+    <!-- Ventana con la información -->
+    <div id="modal">
+        <div class="ventana">
+            <button class="cerrar" id="cerrar" aria-label="Cerrar">✕</button>
+            <img id="grande" alt="">
+            <div class="miniaturas" id="miniaturas"></div>
+            <h2 id="mTitulo"></h2>
+            <p id="mDesc"></p>
+            <ul id="mLista"></ul>
+            <button class="pedir" id="pedir">Quiero este producto</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
